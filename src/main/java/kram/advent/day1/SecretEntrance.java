@@ -9,12 +9,12 @@ public class SecretEntrance extends AdventOfCode2025 {
 
 
     public static void main(String[] args) {
-        input = FileUtil.fileToList(location.concat("day1/SecretEntrance"));
+        inputList = FileUtil.fileToList(location.concat("day1/SecretEntrance"));
 
         int dial = 50;
         int password = 0;
 //        password = getPasswordV1(input, dial, password);
-        password = getPasswordV2(input, dial, password);
+        password = getPasswordV2(inputList, dial, password);
         System.out.println(password);
     }
 
